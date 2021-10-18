@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function computerPlay() {
+            let choice = Math.floor(Math.random() * 3) + 1;
+            // console.log(choice);
+            switch (choice) {
+                case 1:
+                    return "rock";
+                    break;
+                case 2:
+                    return "paper";
+                    break;
+                case 3: 
+                    return "scissors";
+                    break;
+                default: 
+                    console.log(choice);
+                    return "error";
+            }
+        }
+
+
+
+
+        function game() {
+            function playRound(playerSelection, computerSelection) {                
+                if (playerSelection == computerSelection) {
+                    return "tie";
+                }
+                if (playerSelection[0] == 'r') { // Slightly better for performance to just check the first character.
+                    if (computerSelection[0] == 's') {
+                        return "player won";
+                    }
+                    else {
+                        return "computer won";
+                    }
+                }
+                if (playerSelection[0] == 's') {
+                    if (computerSelection[0] == 'p') {
+                        return "player won";
+                    }
+                    else {
+                        return "computer won";
+                    }
+                }
+                else {
+                    if (computerSelection[0] == 'r') {
+                        return "player won";
+                    }
+                    else {
+                        return "computer won";
+                    }
+                }
+
+            }
+
+            let playerScore = 0;
+            let computerScore = 0;
+            let playerSelection;
+            let computerSelection; 
+
+            for (let i = 0; i < 5; i++) {
+
+                playerSelection = prompt("rock, paper, scissors?").trim().toLowerCase();
+
+                while (playerSelection != "rock" && playerSelection != "paper" && playerSelection != "scissors") {
+                    alert("Invalid input! It's either rock, paper, or scissors!");
+                    playerSelection = prompt("rock, paper, scissors?").trim().toLowerCase();
+                }
+
+                computerSelection = computerPlay();
+
+                let roundResult = playRound(playerSelection, computerSelection);
+                console.log(`computer picked ${computerSelection}, ${roundResult}`);
+                
+                switch (roundResult) {
+                    case "player won":
+                        ++playerScore;
+                        break;
+                    case "computer won":
+                        ++computerScore;
+                        break;
+                }
+
+                console.log(`Player: ${playerScore} | Computer: ${computerScore}`);
+            }
+        }
+
+        game();
+
+    </script>
+</body>
+</html>
