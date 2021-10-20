@@ -7,95 +7,107 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        function computerPlay() {
-            let choice = Math.floor(Math.random() * 3) + 1;
-            // console.log(choice);
-            switch (choice) {
-                case 1:
-                    return "rock";
-                    break;
-                case 2:
-                    return "paper";
-                    break;
-                case 3: 
-                    return "scissors";
-                    break;
-                default: 
-                    console.log(choice);
-                    return "error";
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+
+    <div style="border-color:crimson" id="plays">
+        
+    </div>
+
+    <h1>Results</h1>
+    <div style="border-color:cornflowerblue" id="results">
+
+    </div>
+    
+<script>
+    function computerPlay() {
+        let choice = Math.floor(Math.random() * 3) + 1;
+        console.log(choice);
+        switch (choice) {
+            case 1:
+                return "rock";
+                break;
+            case 2:
+                return "paper";
+                break;
+            case 3: 
+                return "scissors";
+                break;
+            default: 
+                return "error";
+        }
+    }
+
+    let result;
+    let playerScore = 0, computerScore = 0;
+
+    function playRound(playerSelection, computerSelection) {
+        const play = document.createElement('div');
+        play.textContent = `Player selected ${playerSelection} and computer selected ${computerSelection}`;                
+        
+        
+        if (playerSelection == computerSelection) {
+            result = "tie";
+        }
+        else if (playerSelection[0] == 'r') { // Slightly better for performance to just check the first character.
+            if (computerSelection[0] == 's') {
+                result = "player won";
+            }
+            else {
+                result = "computer won";
             }
         }
-
-
-
-
-        function game() {
-            function playRound(playerSelection, computerSelection) {                
-                if (playerSelection == computerSelection) {
-                    return "tie";
-                }
-                if (playerSelection[0] == 'r') { // Slightly better for performance to just check the first character.
-                    if (computerSelection[0] == 's') {
-                        return "player won";
-                    }
-                    else {
-                        return "computer won";
-                    }
-                }
-                if (playerSelection[0] == 's') {
-                    if (computerSelection[0] == 'p') {
-                        return "player won";
-                    }
-                    else {
-                        return "computer won";
-                    }
-                }
-                else {
-                    if (computerSelection[0] == 'r') {
-                        return "player won";
-                    }
-                    else {
-                        return "computer won";
-                    }
-                }
-
+        else if (playerSelection[0] == 's') {
+            if (computerSelection[0] == 'p') {
+                result = "player won";
             }
-
-            let playerScore = 0;
-            let computerScore = 0;
-            let playerSelection;
-            let computerSelection; 
-
-            for (let i = 0; i < 5; i++) {
-
-                playerSelection = prompt("rock, paper, scissors?").trim().toLowerCase();
-
-                while (playerSelection != "rock" && playerSelection != "paper" && playerSelection != "scissors") {
-                    alert("Invalid input! It's either rock, paper, or scissors!");
-                    playerSelection = prompt("rock, paper, scissors?").trim().toLowerCase();
-                }
-
-                computerSelection = computerPlay();
-
-                let roundResult = playRound(playerSelection, computerSelection);
-                console.log(`computer picked ${computerSelection}, ${roundResult}`);
-                
-                switch (roundResult) {
-                    case "player won":
-                        ++playerScore;
-                        break;
-                    case "computer won":
-                        ++computerScore;
-                        break;
-                }
-
-                console.log(`Player: ${playerScore} | Computer: ${computerScore}`);
+            else {
+                result = "computer won";
             }
         }
+        else {
+            if (computerSelection[0] == 'r') {
+                result = "player won";
+            }
+            else {
+                result = "computer won";
+            }
+        }
+        switch (result) {
+            case "player won":
+                ++playerScore;
+                break;
+            case "computer won":
+                ++computerScore;
+                break;
+        }
 
-        game();
+        const plays = document.querySelector('#plays');
+        const results = document.querySelector('#results');
 
-    </script>
+        plays.appendChild(play);
+        results.textContent = `Player: ${playerScore} | Computer: ${computerScore}`;
+
+        if (playerScore == 5 || computerScore == 5) {
+            const finalResult = document.createElement('div');
+            if (playerScore == 5) {
+                finalResult.textContent = "PLAYER WON";
+            }
+            else {
+                finalResult.textContent = "COMPUTER WON";
+            }
+            results.appendChild(finalResult);
+            let body = document.querySelector('body');
+            buttons.forEach(button => body.removeChild(button));
+        }
+    }
+
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => button.addEventListener('click', () => {
+            playRound(button.id, computerPlay());
+    } ));
+
+</script>
 </body>
 </html>
