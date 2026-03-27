@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Ha Giang Loop GPS Routes"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1
+    http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <name>Ha Giang Loop - All Variations</name>
+    <desc>Ha Giang Loop motorcycle routes in Ha Giang Province, northern Vietnam. Includes classic clockwise, counter-clockwise, extended (Lung Cu), and short loop variations.</desc>
+    <keywords>Ha Giang, Vietnam, motorcycle, loop, Dong Van, Meo Vac, Ma Pi Leng</keywords>
+  </metadata>
+
+  <!-- ============================================================ -->
+  <!--  WAYPOINTS (shared across all variations)                    -->
+  <!-- ============================================================ -->
+
+  <wpt lat="22.8233" lon="104.9836">
+    <name>Ha Giang City</name>
+    <desc>Starting point. Provincial capital. Fuel, accommodation, permits.</desc>
+    <sym>City</sym>
+  </wpt>
+
+  <wpt lat="23.0522" lon="105.0458">
+    <name>Quan Ba Town</name>
+    <desc>First major stop. Gateway to the Dong Van Karst Plateau Geopark.</desc>
+    <sym>Town</sym>
+  </wpt>
+
+  <wpt lat="23.0720" lon="105.0700">
+    <name>Heaven's Gate (Cong Troi)</name>
+    <desc>Mountain pass with panoramic views over Quan Ba valley and the Twin Mountains.</desc>
+    <sym>Scenic Area</sym>
+  </wpt>
+
+  <wpt lat="23.0610" lon="105.0520">
+    <name>Twin Mountains (Fairy Bosom / Nui Doi)</name>
+    <desc>Iconic twin cone-shaped karst hills in the Quan Ba valley.</desc>
+    <sym>Summit</sym>
+  </wpt>
+
+  <wpt lat="23.1167" lon="105.1500">
+    <name>Yen Minh Town</name>
+    <desc>Overnight stop option. Pine forests nearby. Fuel available.</desc>
+    <sym>Town</sym>
+  </wpt>
+
+  <wpt lat="23.1833" lon="105.2333">
+    <name>Meo Vac Junction</name>
+    <desc>Road splits: straight to Dong Van, right toward Meo Vac direct.</desc>
+    <sym>Junction</sym>
+  </wpt>
+
+  <wpt lat="23.2728" lon="105.3644">
+    <name>Dong Van Town</name>
+    <desc>UNESCO-listed Old Quarter. Northernmost major town before Lung Cu. Accommodation and food.</desc>
+    <sym>Town</sym>
+  </wpt>
+
+  <wpt lat="23.2900" lon="105.3100">
+    <name>Sung La Valley</name>
+    <desc>Scenic valley with traditional H'mong villages and stone houses.</desc>
+    <sym>Scenic Area</sym>
+  </wpt>
+
+  <wpt lat="23.3714" lon="105.3347">
+    <name>Lung Cu Flag Tower</name>
+    <desc>Vietnam's northernmost point. National flag tower with views into China. ~24 km from Dong Van.</desc>
+    <sym>Flag</sym>
+  </wpt>
+
+  <wpt lat="23.2217" lon="105.3967">
+    <name>Ma Pi Leng Pass (Peak)</name>
+    <desc>One of Vietnam's most dramatic passes. Cliffs drop ~1,000 m to the Nho Que River below.</desc>
+    <sym>Summit</sym>
+  </wpt>
+
+  <wpt lat="23.1800" lon="105.4100">
+    <name>Nho Que River Viewpoint</name>
+    <desc>Turquoise river far below Ma Pi Leng. Boat trips available from Meo Vac side.</desc>
+    <sym>Scenic Area</sym>
+  </wpt>
+
+  <wpt lat="23.1667" lon="105.4167">
+    <name>Meo Vac Town</name>
+    <desc>Market town, famous Sunday ethnic minority market. Overnight option.</desc>
+    <sym>Town</sym>
+  </wpt>
+
+  <wpt lat="22.9833" lon="105.2167">
+    <name>Du Gia Village</name>
+    <desc>Scenic village along the Lo River with waterfalls and swimming. Homestays available.</desc>
+    <sym>Village</sym>
+  </wpt>
+
+  <wpt lat="23.0200" lon="105.1300">
+    <name>Tham Nguyen Cave</name>
+    <desc>Accessible cave near Yen Minh–Ha Giang road. Worth a short detour.</desc>
+    <sym>Cave</sym>
+  </wpt>
+
+  <wpt lat="23.0750" lon="105.0800">
+    <name>Bat Cave Viewpoint (Bat Da Tinh)</name>
+    <desc>Karst cliff area near Quan Ba with cave swallows.</desc>
+    <sym>Scenic Area</sym>
+  </wpt>
+
+  <wpt lat="23.2650" lon="105.3550">
+    <name>Dong Van Old Quarter</name>
+    <desc>Historic French-era market area with H'mong and Tay architecture.</desc>
+    <sym>Historic Site</sym>
+  </wpt>
+
+  <wpt lat="23.3100" lon="105.3200">
+    <name>Lo Lo Chai Village</name>
+    <desc>Traditional Lo Lo ethnic minority village near Lung Cu. Homestays available.</desc>
+    <sym>Village</sym>
+  </wpt>
+
+  <!-- ============================================================ -->
+  <!--  ROUTE 1: Classic Clockwise Loop (3–4 days)                  -->
+  <!--  Ha Giang → Quan Ba → Yen Minh → Dong Van                   -->
+  <!--  → Meo Vac → Du Gia → Ha Giang                              -->
+  <!-- ============================================================ -->
+  <rte>
+    <name>HA GIANG - Classic Clockwise Loop</name>
+    <desc>The standard 3–4 day clockwise route. ~350 km total. Ride north through karst scenery, cross Ma Pi Leng Pass heading west, return via Du Gia.</desc>
+    <rtept lat="22.8233" lon="104.9836"><name>Ha Giang City</name></rtept>
+    <rtept lat="23.0522" lon="105.0458"><name>Quan Ba Town</name></rtept>
+    <rtept lat="23.0720" lon="105.0700"><name>Heaven's Gate</name></rtept>
+    <rtept lat="23.1167" lon="105.1500"><name>Yen Minh Town</name></rtept>
+    <rtept lat="23.1833" lon="105.2333"><name>Meo Vac Junction</name></rtept>
+    <rtept lat="23.2728" lon="105.3644"><name>Dong Van Town</name></rtept>
+    <rtept lat="23.2217" lon="105.3967"><name>Ma Pi Leng Pass</name></rtept>
+    <rtept lat="23.1667" lon="105.4167"><name>Meo Vac Town</name></rtept>
+    <rtept lat="22.9833" lon="105.2167"><name>Du Gia Village</name></rtept>
+    <rtept lat="22.8233" lon="104.9836"><name>Ha Giang City</name></rtept>
+  </rte>
+
+  <!-- ============================================================ -->
+  <!--  ROUTE 2: Counter-Clockwise Loop (3–4 days)                  -->
+  <!--  Ha Giang → Du Gia → Meo Vac → Dong Van                     -->
+  <!--  → Yen Minh → Quan Ba → Ha Giang                            -->
+  <!-- ============================================================ -->
+  <rte>
+    <name>HA GIANG - Counter-Clockwise Loop</name>
+    <desc>Reverse of the classic loop. Cross Ma Pi Leng heading east (arguably better views). ~350 km total.</desc>
+    <rtept lat="22.8233" lon="104.9836"><name>Ha Giang City</name></rtept>
+    <rtept lat="22.9833" lon="105.2167"><name>Du Gia Village</name></rtept>
+    <rtept lat="23.1667" lon="105.4167"><name>Meo Vac Town</name></rtept>
+    <rtept lat="23.1800" lon="105.4100"><name>Nho Que River Viewpoint</name></rtept>
+    <rtept lat="23.2217" lon="105.3967"><name>Ma Pi Leng Pass</name></rtept>
+    <rtept lat="23.2728" lon="105.3644"><name>Dong Van Town</name></rtept>
+    <rtept lat="23.1833" lon="105.2333"><name>Meo Vac Junction</name></rtept>
+    <rtept lat="23.1167" lon="105.1500"><name>Yen Minh Town</name></rtept>
+    <rtept lat="23.0720" lon="105.0700"><name>Heaven's Gate</name></rtept>
+    <rtept lat="23.0522" lon="105.0458"><name>Quan Ba Town</name></rtept>
+    <rtept lat="22.8233" lon="104.9836"><name>Ha Giang City</name></rtept>
+  </rte>
+
+  <!-- ============================================================ -->
+  <!--  ROUTE 3: Extended Loop with Lung Cu (4–5 days)              -->
+  <!--  Adds the Lung Cu Flag Tower detour from Dong Van            -->
+  <!-- ============================================================ -->
+  <rte>
+    <name>HA GIANG - Extended Loop with Lung Cu Flag Tower</name>
+    <desc>Classic clockwise loop plus detour to Lung Cu (Vietnam's northernmost point) and Sung La valley. ~400 km total. Recommended 4–5 days.</desc>
+    <rtept lat="22.8233" lon="104.9836"><name>Ha Giang City</name></rtept>
+    <rtept lat="23.0522" lon="105.0458"><name>Quan Ba Town</name></rtept>
+    <rtept lat="23.0720" lon="105.0700"><name>Heaven's Gate</name></rtept>
+    <rtept lat="23.0610" lon="105.0520"><name>Twin Mountains Viewpoint</name></rtept>
+    <rtept lat="23.1167" lon="105.1500"><name>Yen Minh Town</name></rtept>
+    <rtept lat="23.2728" lon="105.3644"><name>Dong Van Town</name></rtept>
+    <rtept lat="23.2650" lon="105.3550"><name>Dong Van Old Quarter</name></rtept>
+    <rtept lat="23.2900" lon="105.3100"><name>Sung La Valley</name></rtept>
+    <rtept lat="23.3100" lon="105.3200"><name>Lo Lo Chai Village</name></rtept>
+    <rtept lat="23.3714" lon="105.3347"><name>Lung Cu Flag Tower</name></rtept>
+    <rtept lat="23.2728" lon="105.3644"><name>Dong Van Town (return)</name></rtept>
+    <rtept lat="23.2217" lon="105.3967"><name>Ma Pi Leng Pass</name></rtept>
+    <rtept lat="23.1800" lon="105.4100"><name>Nho Que River Viewpoint</name></rtept>
+    <rtept lat="23.1667" lon="105.4167"><name>Meo Vac Town</name></rtept>
+    <rtept lat="22.9833" lon="105.2167"><name>Du Gia Village</name></rtept>
+    <rtept lat="22.8233" lon="104.9836"><name>Ha Giang City</name></rtept>
+  </rte>
+
+  <!-- ============================================================ -->
+  <!--  ROUTE 4: Short Loop / 2-Day Express                         -->
+  <!--  Ha Giang → Quan Ba → Yen Minh → Dong Van → Meo Vac         -->
+  <!--  → Ha Giang (direct road, skipping Du Gia)                   -->
+  <!-- ============================================================ -->
+  <rte>
+    <name>HA GIANG - Short Loop (2-Day Express)</name>
+    <desc>Condensed version for those with limited time. Skips Du Gia and returns direct from Meo Vac. ~280 km. Long days required.</desc>
+    <rtept lat="22.8233" lon="104.9836"><name>Ha Giang City</name></rtept>
+    <rtept lat="23.0522" lon="105.0458"><name>Quan Ba Town</name></rtept>
+    <rtept lat="23.0720" lon="105.0700"><name>Heaven's Gate</name></rtept>
+    <rtept lat="23.1167" lon="105.1500"><name>Yen Minh Town</name></rtept>
+    <rtept lat="23.2728" lon="105.3644"><name>Dong Van Town</name></rtept>
+    <rtept lat="23.2217" lon="105.3967"><name>Ma Pi Leng Pass</name></rtept>
+    <rtept lat="23.1667" lon="105.4167"><name>Meo Vac Town</name></rtept>
+    <rtept lat="22.8233" lon="104.9836"><name>Ha Giang City (direct return via QL4C)</name></rtept>
+  </rte>
+
+  <!-- ============================================================ -->
+  <!--  ROUTE 5: Full Extended Loop (5–7 days)                      -->
+  <!--  Classic + Lung Cu + Sung La + Du Gia + Tham Nguyen Cave     -->
+  <!-- ============================================================ -->
+  <rte>
+    <name>HA GIANG - Full Extended Loop (All Highlights)</name>
+    <desc>The complete experience hitting every major highlight. ~430 km. Recommended 5–7 days at a relaxed pace.</desc>
+    <rtept lat="22.8233" lon="104.9836"><name>Ha Giang City</name></rtept>
+    <rtept lat="23.0522" lon="105.0458"><name>Quan Ba Town</name></rtept>
+    <rtept lat="23.0720" lon="105.0700"><name>Heaven's Gate</name></rtept>
+    <rtept lat="23.0610" lon="105.0520"><name>Twin Mountains Viewpoint</name></rtept>
+    <rtept lat="23.0750" lon="105.0800"><name>Bat Da Tinh Viewpoint</name></rtept>
+    <rtept lat="23.1167" lon="105.1500"><name>Yen Minh Town</name></rtept>
+    <rtept lat="23.0200" lon="105.1300"><name>Tham Nguyen Cave</name></rtept>
+    <rtept lat="23.1833" lon="105.2333"><name>Meo Vac Junction</name></rtept>
+    <rtept lat="23.2728" lon="105.3644"><name>Dong Van Town</name></rtept>
+    <rtept lat="23.2650" lon="105.3550"><name>Dong Van Old Quarter</name></rtept>
+    <rtept lat="23.2900" lon="105.3100"><name>Sung La Valley</name></rtept>
+    <rtept lat="23.3100" lon="105.3200"><name>Lo Lo Chai Village</name></rtept>
+    <rtept lat="23.3714" lon="105.3347"><name>Lung Cu Flag Tower</name></rtept>
+    <rtept lat="23.2728" lon="105.3644"><name>Dong Van Town (return)</name></rtept>
+    <rtept lat="23.2217" lon="105.3967"><name>Ma Pi Leng Pass</name></rtept>
+    <rtept lat="23.1800" lon="105.4100"><name>Nho Que River Viewpoint</name></rtept>
+    <rtept lat="23.1667" lon="105.4167"><name>Meo Vac Town</name></rtept>
+    <rtept lat="22.9833" lon="105.2167"><name>Du Gia Village</name></rtept>
+    <rtept lat="22.8233" lon="104.9836"><name>Ha Giang City</name></rtept>
+  </rte>
+
+</gpx>
